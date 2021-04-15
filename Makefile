@@ -1,11 +1,11 @@
 CC = g++
 CFLAGS = -Wall
 
-PROG = sort 
+PROG = main 
 SRCS = *.cpp *.hpp
 
 all: $(PROG)
-	@./sort
+	@./$(PROG)
 
 $(PROG):	$(SRCS)
 	@$(CC) $(CFLAGS) -o $(PROG) $(SRCS)
